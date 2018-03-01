@@ -134,7 +134,8 @@ ggplot(data=mtcars,aes(wt, mpg,color=factor(cyl),
                        shape=factor(am)))+
    geom_point(size=2)+
    geom_smooth(method='lm',size=1,se=F)
-#? lm über alle?
+
+#? lm for all?
 ggplot(data=mtcars,aes(wt, mpg))+
    geom_smooth(size=1,color='black',fill='yellow')+
    geom_point(size=3,aes(color=factor(cyl),shape=factor(am))) #aes for geom only
